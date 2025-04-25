@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: 
+        url('images/clouds.jpg'),
+        linear-gradient(to bottom right, #e6f7ff, #fff5e6);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+
+header {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 800px;
+    object-fit: cover;
+    -webkit-object-fit: cover; 
+    -moz-object-fit: cover; 
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #b3d9ff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #a3cbe3;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+    padding-bottom: 5rem;
+}
+
+h1, h2, h3 {
+    color: #2d4f68;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #5fa8d3;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #468bb0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+button[type="submit"] {
+    margin-top: 1rem;
+    background-color: #5fa8d3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #468bb0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.external-links a {
+    color: #2d4f68;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.external-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #b3d9ff;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+    z-index: 9999;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Haven - Contact</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="mystylesheet.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/banner.png" alt="Mindful Haven"></a>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="practices.html">Practices</a> |
+        <a href="resources.html">Resource Hub</a> |
+        <a href="blog.html">Blog</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <div class="contact-intro">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Please fill out the form below and we'll get back to you soon.</p>
+        </div>
+    
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xeoawjgb" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            
+                <button type="submit">Send Message</button>
+            </form>
+            
+            <p id="form-status" class="form-status"></p>
+        </div>
+    </main>    
+
+    <footer>
+        <p>&copy; 2025 Mindful Haven. All rights reserved. | <a href="contact.html" style="color: #fff;">Contact Us</a></p>
+    </footer> 
+</body>
+</html>
