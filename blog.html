@@ -11,16 +11,21 @@
     <header>
         <a href="index.html"><img src="images/banner.png" alt="Mindful Haven"></a>
     </header>
+<nav>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="practices.html">Practices</a> |
-        <a href="resources.html">Resource Hub</a> |
-        <a href="blog.html">Blog</a> |
-        <a href="faq.html">FAQ</a> |
+    <div class="nav-links" id="mynav-links">
+        <a href="index.html">Home</a>
+        <a href="practices.html">Practices</a>
+        <a href="resources.html">Resource Hub</a>
+        <a href="blog.html"class="active">Blog</a>
+        <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
-    </nav>
-
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</nav>
     <main>
         <h1>Mindful Haven Blog</h1>
         <p>Short reflections and tips to support your mental wellness every day.</p>
@@ -45,7 +50,17 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Mindful Haven. All rights reserved. | <a href="contact.html" style="color: #fff;">Contact Us</a></p>
+        <p>&copy; 2026 Mindful Haven. All rights reserved. | <a href="contact.html" style="color: #fff;">Contact Us</a></p>
     </footer>
+<script>
+function myFunction() {
+  var x = document.querySelector(".nav-links");
+  if (x.className === "nav-links") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-links";
+  }
+}
+</script>
 </body>
 </html>

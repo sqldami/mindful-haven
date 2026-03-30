@@ -50,12 +50,68 @@ nav a:hover {
     border-radius: 5px;
 }
 
+.nav-links {
+  text-align: center;
+  overflow: hidden; 
+  position: relative; 
+}
+
+.nav-links a {
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-links .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    text-align: center;
+  }
+
+  .nav-links a:not(:first-child) {
+    display: none;
+  }
+  
+  .nav-links a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-links.responsive {
+    text-align: center; 
+  }
+
+  .nav-links.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-links.responsive a {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+}
+
 main {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 40px auto;
+    padding: 3rem;
     text-align: left;
-    padding-bottom: 5rem;
+    
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
 }
 
 h1, h2, h3 {
@@ -165,12 +221,13 @@ footer {
     background-color: #b3d9ff;
     color: #333;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
+    padding: 1.5rem;
     width: 100%;
-    bottom: 0;
     font-size: 14px;
-    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 footer p {

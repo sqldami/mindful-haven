@@ -14,15 +14,21 @@
         </a>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="practices.html">Practices</a> |
-        <a href="resources.html">Resource Hub</a> |
-        <a href="blog.html">Blog</a> |
-        <a href="faq.html">FAQ</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
+<nav>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <div class="nav-links" id="mynav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="practices.html">Practices</a>
+        <a href="resources.html">Resource Hub</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</nav>
     <main>
         <h1>Welcome to Mindful Haven</h1>
         <p>Your space for mental wellness, offering tools, practices, and resources to promote a healthy mind.</p>
@@ -48,10 +54,18 @@
             <a href="blog.html" class="download-btn">Read Our Tips</a>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 Mindful Haven. All rights reserved. | <a href="contact.html" style="color: #fff;">Contact Us</a></p>
+        <p>&copy; 2026 Mindful Haven. All rights reserved. | <a href="contact.html" style="color: #fff;">Contact Us</a></p>
     </footer>
-    
+<script>
+function myFunction() {
+  var x = document.querySelector(".nav-links");
+  if (x.className === "nav-links") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav-links";
+  }
+}
+</script>
 </body>
 </html>
