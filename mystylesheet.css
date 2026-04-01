@@ -67,32 +67,33 @@ nav a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .nav-links {
+    
+    .nav-links {
     text-align: center;
   }
 
-  .nav-links a:not(:first-child) {
+    .nav-links a:not(:first-child) {
     display: none;
   }
   
-  .nav-links a.icon {
+    .nav-links a.icon {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .nav-links.responsive {
+    .nav-links.responsive {
     text-align: center; 
   }
 
-  .nav-links.responsive .icon {
+    .nav-links.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .nav-links.responsive a {
+    .nav-links.responsive a {
     display: block;
     float: none;
     text-align: center;
@@ -218,6 +219,7 @@ button[type="submit"]:hover {
 }
 
 footer {
+    box-sizing: border-box;
     background-color: #b3d9ff;
     color: #333;
     text-align: center;
